@@ -10814,7 +10814,6 @@ BabbleSpell:SetStrictness(true)
 
 function BabbleSpell:GetSpellIcon(spell)
 	self:argCheck(spell, 2, "string")
-	print(spell)
 	local icon = spellIcons[spell] or
 		spellIcons[self:HasReverseTranslation(spell) and self:GetReverseTranslation(spell) or false]
 	if not icon then
