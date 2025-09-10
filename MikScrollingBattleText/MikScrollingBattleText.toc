@@ -7,7 +7,7 @@
 
 Libs\AceLibrary\AceLibrary.lua
 Libs\AceLocale-2.2\AceLocale-2.2.lua
-Libs\BabbleSpell-2.2\Babble-Spell-2.2.lua
+Libs\Babble-Spell-2.3\Babble-Spell-2.3.lua
 
 MikScrollingBattleText-enUS.lua
 MikScrollingBattleText-frFR.lua

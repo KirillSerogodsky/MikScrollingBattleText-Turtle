@@ -119,7 +119,7 @@ ICON_CACHE["effet inferno"] =					"Interface\\Icons\\spell_fire_incinerate"
 NO_ICON_CACHE = {}
 
 -- Babble-Spell pour les icones des spells de classe
-local BS = AceLibrary("Babble-Spell-2.2")
+local BS = AceLibrary("Babble-Spell-2.3")
 
 -- Number of font strings.
 local NUM_FONT_STRINGS = 20;

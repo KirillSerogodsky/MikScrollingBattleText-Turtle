@@ -18,7 +18,7 @@ MikSBT.WINDOW_TITLE	= "Mik's Scrolling Battle Text " .. MikSBT.VERSION_STRING ..
 
 MikSBT.COMMAND		= "/msbt";
 
-local BS = AceLibrary("Babble-Spell-2.2")
+local BS = AceLibrary("Babble-Spell-2.3")
 local L = AceLibrary("AceLocale-2.2"):new(MikSBT.MOD_NAME)
 
 -------------------------------------------------------------------------------
