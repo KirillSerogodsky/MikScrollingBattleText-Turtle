@@ -206,6 +206,7 @@ BabbleSpell:RegisterTranslations("enUS", function()
 		["Critical Mass"] = true,
 		["Crossbows"] = true,
 		["Cruelty"] = true,
+		["Crusader Strike"] = true,
 		["Cultivation"] = true,
 		["Cure Disease"] = true,
 		["Cure Poison"] = true,
@@ -459,6 +460,7 @@ BabbleSpell:RegisterTranslations("enUS", function()
 		["Holy Reach"] = true,
 		["Holy Shield"] = true,
 		["Holy Shock"] = true,
+		["Holy Strike"] = true,
 		["Holy Specialization"] = true,
 		["Holy Wrath"] = true,
 		["Honorless Target"] = true,
@@ -666,6 +668,7 @@ BabbleSpell:RegisterTranslations("enUS", function()
 		["Kidney Shot"] = true,
 		["Killer Instinct"] = true,
 		["Kodo Riding"] = true,
+		["Lacerate"] = true,
 		["Lash of Pain"] = true,
 		["Last Stand"] = true,
 		["Lasting Judgement"] = true,
@@ -1485,7 +1488,7 @@ BabbleSpell:RegisterTranslations("deDE", function()
 		["Healing Stream Totem"] = "Totem des heilenden Flusses",
 		["Healing Touch"] = "Heilende Ber\195\188hrung",
 		["Healing Wave"] = "Welle der Heilung",
---		["Healing Way"] = true,
+		--		["Healing Way"] = true,
 		["Health Funnel"] = "Lebenslinie",
 		["Heart of the Wild"] = "Herz der Wildnis",
 		["Hellfire Effect"] = "H\195\182llenfeuer - Effekt",
@@ -2009,7 +2012,7 @@ BabbleSpell:RegisterTranslations("deDE", function()
 		["Surefooted"] = "Sicherer Stand",
 		["Survivalist"] = "\195\156berlebensk\195\188nstler",
 		["Sweeping Strikes"] = "Weitreichende St\195\182\195\159e",
---		["Swiftmend"] = true,
+		--		["Swiftmend"] = true,
 		["Swipe"] = "Prankenhieb",
 		["Sword Specialization"] = "Schwert-Spezialisierung",
 		["Tactical Mastery"] = "Taktiker",
@@ -2832,7 +2835,7 @@ BabbleSpell:RegisterTranslations("frFR", function()
 		["Polearms"] = "Armes d'hast",
 		["Polymorph"] = "M\195\169tamorphose",
 		["Polymorph: Pig"] = "Métamorphose : cochon",
-		["Polymorph: Turtle"] = "M\195\169tamorphose : tortue",  -- all other polymorph spells don't have a capital letter before the animal name, to test
+		["Polymorph: Turtle"] = "M\195\169tamorphose : tortue", -- all other polymorph spells don't have a capital letter before the animal name, to test
 		["Portal: Darnassus"] = "Portail : Darnassus",
 		["Portal: Ironforge"] = "Portail : Ironforge",
 		["Portal: Orgrimmar"] = "Portail : Orgrimmar",
@@ -2964,7 +2967,7 @@ BabbleSpell:RegisterTranslations("frFR", function()
 		["Shatter"] = "Fracasser",
 		["Shell Shield"] = "Carapace bouclier",
 		["Shield Bash"] = "Coup de bouclier",
-		["Shield Bash - Silenced"] = "Coup de bouclier - silencieux",  -- seems to be the only "- Silenced" not having a Cap letter, will try to test!
+		["Shield Bash - Silenced"] = "Coup de bouclier - silencieux", -- seems to be the only "- Silenced" not having a Cap letter, will try to test!
 		["Shield Block"] = "Ma\195\174trise du blocage",
 		["Shield Slam"] = "Heurt de bouclier",
 		["Shield Specialization"] = "Sp\195\169cialisation Bouclier",
@@ -3005,7 +3008,7 @@ BabbleSpell:RegisterTranslations("frFR", function()
 		["Starfire Stun"] = "Feu stellaire \195\169tourdissant",
 		["Starshards"] = "Eclats stellaires",
 		["Staves"] = "B\195\162tons",
-		["Steady Shot"] = "Tir stable",	
+		["Steady Shot"] = "Tir stable",
 		["Stealth"] = "Camouflage",
 		["Stoneclaw Totem"] = "Totem de Griffes de pierre",
 		["Stoneform"] = "Forme de pierre",
@@ -3282,28 +3285,29 @@ local spellIcons = {
 	["Counterattack"] = "Ability_Warrior_Challange",
 	["Counterspell"] = "Spell_Frost_IceShock",
 	["Cower"] = "Ability_Druid_Cower",
-	["Create Firestone (Lesser)"]="INV_Ammo_FireTar",
-	["Create Firestone"]="INV_Ammo_FireTar",
-	["Create Firestone (Greater)"]="INV_Ammo_FireTar",
-	["Create Firestone (Major)"]="INV_Ammo_FireTar",
-	["Create Healthstone (Minor)"]="INV_Stone_04",
-	["Create Healthstone (Lesser)"]="INV_Stone_04",
-	["Create Healthstone"]="INV_Stone_04",
-	["Create Healthstone (Greater)"]="INV_Stone_04",
-	["Create Healthstone (Major)"]="INV_Stone_04",
-	["Create Soulstone (Minor)"]="Spell_Shadow_SoulGem",
-	["Create Soulstone (Lesser)"]="Spell_Shadow_SoulGem",
-	["Create Soulstone"]="Spell_Shadow_SoulGem",
-	["Create Soulstone (Greater)"]="Spell_Shadow_SoulGem",
-	["Create Soulstone (Major)"]="Spell_Shadow_SoulGem",
-	["Create Spellstone"]="INV_Misc_Gem_Sapphire_01",
-	["Create Spellstone (Greater)"]="INV_Misc_Gem_Sapphire_01",
-	["Create Spellstone (Major)"]="INV_Misc_Gem_Sapphire_01",
+	["Create Firestone (Lesser)"] = "INV_Ammo_FireTar",
+	["Create Firestone"] = "INV_Ammo_FireTar",
+	["Create Firestone (Greater)"] = "INV_Ammo_FireTar",
+	["Create Firestone (Major)"] = "INV_Ammo_FireTar",
+	["Create Healthstone (Minor)"] = "INV_Stone_04",
+	["Create Healthstone (Lesser)"] = "INV_Stone_04",
+	["Create Healthstone"] = "INV_Stone_04",
+	["Create Healthstone (Greater)"] = "INV_Stone_04",
+	["Create Healthstone (Major)"] = "INV_Stone_04",
+	["Create Soulstone (Minor)"] = "Spell_Shadow_SoulGem",
+	["Create Soulstone (Lesser)"] = "Spell_Shadow_SoulGem",
+	["Create Soulstone"] = "Spell_Shadow_SoulGem",
+	["Create Soulstone (Greater)"] = "Spell_Shadow_SoulGem",
+	["Create Soulstone (Major)"] = "Spell_Shadow_SoulGem",
+	["Create Spellstone"] = "INV_Misc_Gem_Sapphire_01",
+	["Create Spellstone (Greater)"] = "INV_Misc_Gem_Sapphire_01",
+	["Create Spellstone (Major)"] = "INV_Misc_Gem_Sapphire_01",
 	["Crippling Poison II"] = "Ability_PoisonSting",
 	["Crippling Poison"] = "Ability_PoisonSting",
 	["Critical Mass"] = "Spell_Nature_WispHeal",
 	["Crossbows"] = "INV_Weapon_Crossbow_01",
 	["Cruelty"] = "Ability_Rogue_Eviscerate",
+	["Crusader Strike"] = "Spell_Holy_CrusaderStrike",
 	["Cultivation"] = "INV_Misc_Flower_01",
 	["Cure Disease"] = "Spell_Holy_NullifyDisease",
 	["Cure Poison"] = "Spell_Nature_NullifyPoison",
@@ -3544,6 +3548,7 @@ local spellIcons = {
 	["Holy Shield"] = "Spell_Holy_BlessingOfProtection",
 	["Holy Shock"] = "Spell_Holy_SearingLight",
 	["Holy Specialization"] = "Spell_Holy_SealOfSalvation",
+	["Holy Strike"] = "inv_sword_01",
 	["Holy Wrath"] = "Spell_Holy_Excorcism",
 	["Honorless Target"] = "Spell_Magic_LesserInvisibilty",
 	["Horse Riding"] = "Spell_Nature_Swiftness",
@@ -3749,6 +3754,7 @@ local spellIcons = {
 	["Kidney Shot"] = "Ability_Rogue_KidneyShot",
 	["Killer Instinct"] = "Spell_Holy_BlessingOfStamina",
 	["Kodo Riding"] = "Spell_Nature_Swiftness",
+	["Lacerate"] = "spell_lacerate_1c",
 	["Lash of Pain"] = "Spell_Shadow_Curse",
 	["Last Stand"] = "Spell_Holy_AshesToAshes",
 	["Lasting Judgement"] = "Spell_Holy_HealingAura",
@@ -4153,7 +4159,8 @@ BabbleSpell:SetStrictness(true)
 
 function BabbleSpell:GetSpellIcon(spell)
 	self:argCheck(spell, 2, "string")
-	local icon = spellIcons[spell] or spellIcons[self:HasReverseTranslation(spell) and self:GetReverseTranslation(spell) or false]
+	local icon = spellIcons[spell] or
+		spellIcons[self:HasReverseTranslation(spell) and self:GetReverseTranslation(spell) or false]
 	if not icon then
 		return nil
 	end
@@ -4162,7 +4169,8 @@ end
 
 function BabbleSpell:GetShortSpellIcon(spell)
 	self:argCheck(spell, 2, "string")
-	return spellIcons[spell] or spellIcons[self:HasReverseTranslation(spell) and self:GetReverseTranslation(spell) or false]
+	return spellIcons[spell] or
+		spellIcons[self:HasReverseTranslation(spell) and self:GetReverseTranslation(spell) or false]
 end
 
 AceLibrary:Register(BabbleSpell, MAJOR_VERSION, MINOR_VERSION)
